@@ -6,7 +6,7 @@
 /** @var $migrationName string the new migration class name
  *  @var array $tableList
  *  @var array $tableRelations
- *  @var insolita\migrik\gii\Generator $generator
+ *  @var navatech\migration\gii\Generator $generator
  *
  */
 
@@ -47,6 +47,9 @@ try{
         <?php endforeach;?>
     <?php endforeach;?>
 <?php endif?>
+<?php if($generator->generateData):?>
+<?=$generator->getTableData(($generator->usePrefix)?$tableData['alias']:$tableData['name'])?>
+<?php endif;?>
 $transaction->commit();
 } catch (Exception $e) {
 echo 'Catch Exception '.$e->getMessage().' and rollBack this';

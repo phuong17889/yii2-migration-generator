@@ -10,7 +10,7 @@
  *  @var array $tableColumns
  *  @var array $tableIndexes
  *  @var array $tablePk
- *  @var insolita\migrik\gii\Generator $generator
+ *  @var navatech\migration\gii\Generator $generator
  */
 
 echo "<?php\n";

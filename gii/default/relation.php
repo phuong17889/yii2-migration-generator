@@ -5,7 +5,7 @@
  */
 /** @var $migrationName string the new migration class name
  *  @var array  $tableRelations
- *  @var insolita\migrik\gii\Generator $generator
+ *  @var navatech\migration\gii\Generator $generator
  */
 
 echo "<?php\n";
