@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require-dev --prefer-dist insolita/yii2-migration-generator "*"
+php composer.phar require-dev --prefer-dist navatech/yii2-migration-generator "*"
 ```
 
 or add
 
 ```
-"insolita/yii2-migration-generator": "*"
+"navatech/yii2-migration-generator": "*"
 ```
 
 to the require-dev section of your `composer.json` file.
