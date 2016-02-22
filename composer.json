@@ -15,11 +15,9 @@
 			"navatech\\migration\\": ""
 		}
 	},
-    "require": {
-        "yiisoft/yii2": "*"
-    },
-	"require-dev": {
-		"yiisoft/yii2-gii": "*"
+	"require": {
+	        "yiisoft/yii2": "*",
+	        "yiisoft/yii2-gii": "*"
 	},
 	"extra": {
 		"bootstrap": "navatech\\migration\\Bootstrap"
