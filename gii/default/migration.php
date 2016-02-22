@@ -38,6 +38,9 @@ class <?= $migrationName ?> extends Migration
         $this->createIndex('<?=$name?>', '<?=$tableAlias?>','<?=implode(",",array_values($data['cols']))?>',<?=$data['isuniq']?>);<?php endif;?>
 <?php endforeach;?>
 <?php endif?>
+<?php if($generator->generateData):?>
+    <?=$generator->getTableData(($generator->usePrefix)?$tableAlias:$tableName)?>
+<?php endif;?>
 
     }
 
