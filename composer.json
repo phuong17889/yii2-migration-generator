@@ -3,8 +3,12 @@
     "description": "gii tool for mass migration generation by Schema ",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
-    "license": "MIT",
+    "license": "BSD-3-CLAUSE",
     "authors": [
+   	{
+            "name": "insolita",
+            "email": "donnainsolita@gmail.com"
+        },
         {
             "name": "Le Phuong",
             "email": "phuong1789@gmail.com"
