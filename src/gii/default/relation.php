@@ -3,9 +3,12 @@
  * This view is used by console/controllers/MigrateController.php
  * The following variables are available in this view:
  */
-/** @var $migrationName string the new migration class name
- *  @var array  $tableRelations
- *  @var navatech\migration\gii\Generator $generator
+use navatech\migration\gii\Generator;
+
+/**
+ * @var string    $migrationName  the new migration class name
+ * @var array     $tableRelations
+ * @var Generator $generator
  */
 
 echo "<?php\n";
