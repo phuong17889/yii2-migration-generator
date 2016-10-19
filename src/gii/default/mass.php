@@ -21,9 +21,6 @@ use yii\db\Migration;
 class <?= $migrationName ?> extends Migration {
 	public function safeUp() {
 		$tableOptions = '<?= $generator->tableOptions ?>';
-		$connection=Yii::$app->db;
-		$transaction=$connection->beginTransaction();
-		try {
 		<?php foreach ($tableList as $tableData): ?>
 			$this->createTable('<?= ($generator->usePrefix) ? $tableData['alias'] : $tableData['name'] ?>',
 			[
@@ -50,17 +47,9 @@ class <?= $migrationName ?> extends Migration {
 		<?php if ($generator->generateData): ?>
 			<?= $generator->getTableData(($generator->usePrefix) ? $tableData['alias'] : $tableData['name']) ?>
 		<?php endif; ?>
-			$transaction->commit();
-		} catch (Exception $e) {
-			echo 'Catch Exception '.$e->getMessage().' and rollBack this';
-			$transaction->rollBack();
-		}
 	}
 
 	public function safeDown() {
-		$connection=Yii::$app->db;
-		$transaction=$connection->beginTransaction();
-		try {
 		<?php if (!empty($tableRelations) && is_array($tableRelations)): ?>
 			<?php foreach ($tableRelations as $table): ?>
 				<?php foreach ($table['fKeys'] as $i => $rel): ?>
@@ -71,10 +60,5 @@ class <?= $migrationName ?> extends Migration {
 		<?php foreach ($tableList as $tableData): ?>
 			$this->dropTable('<?= ($generator->usePrefix) ? $tableData['alias'] : $tableData['name'] ?>');
 		<?php endforeach; ?>
-			$transaction->commit();
-		} catch (Exception $e) {
-			echo 'Catch Exception '.$e->getMessage().' and rollBack this';
-			$transaction->rollBack();
-		}
 	}
 }

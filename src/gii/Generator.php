@@ -352,7 +352,7 @@ class Generator extends \yii\gii\Generator {
 	 */
 	public function generateIndexes($tableName) {
 		$indexes = [];
-		$query   = Yii::$app->db->createCommand('SHOW INDEX FROM ' . $tableName)->queryAll();
+		$query   = Yii::$app->db->createCommand('SHOW INDEX FROM `' . $tableName . '`')->queryAll();
 		if ($query) {
 			foreach ($query as $i => $index) {
 				$indexes[$index['Key_name']]['cols'][$index['Seq_in_index']] = $index['Column_name'];
