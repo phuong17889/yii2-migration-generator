@@ -352,7 +352,7 @@ class Generator extends \yii\gii\Generator {
 	 */
 	public function generateIndexes($tableName) {
 		$indexes = [];
-		$query   = Yii::$app->db->createCommand('SHOW INDEX FROM ' . $tableName)->queryAll();
+		$query   = Yii::$app->{$this->db}->createCommand('SHOW INDEX FROM ' . $tableName)->queryAll();
 		if ($query) {
 			foreach ($query as $i => $index) {
 				$indexes[$index['Key_name']]['cols'][$index['Seq_in_index']] = $index['Column_name'];
@@ -368,7 +368,7 @@ class Generator extends \yii\gii\Generator {
 	 * @return string
 	 */
 	public function generatePure($tableName) {
-		$query = Yii::$app->db->createCommand('SHOW CREATE TABLE ' . $tableName)->queryOne();
+		$query = Yii::$app->{$this->db}->createCommand('SHOW CREATE TABLE ' . $tableName)->queryOne();
 		return isset($query['Create Table']) ? : '';
 	}
 
@@ -398,8 +398,8 @@ class Generator extends \yii\gii\Generator {
 	 */
 	public function getTableData($tableName) {
 		$out     = '';
-		$data    = Yii::$app->db->createCommand('SELECT * FROM ' . $tableName)->queryAll();
-		$columns = Yii::$app->db->getTableSchema($tableName);
+		$data    = Yii::$app->{$this->db}->createCommand('SELECT * FROM ' . $tableName)->queryAll();
+		$columns = Yii::$app->{$this->db}->getTableSchema($tableName);
 		foreach ($data as $row) {
 			$out .= '$this->insert(\'' . $tableName . '\',[';
 			foreach ($columns->columns as $column) {
