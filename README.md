@@ -1,3 +1,11 @@
+DEPRECATED
+==========
+This project no longer supported. Using [insolita/yii2-migration-generator](https://github.com/Insolita/yii2-migrik) is better:
+```
+https://github.com/Insolita/yii2-migrik
+```
+
+
 Migration Generator From Mysql database (beta)
 =======================================
 generate migration files (not dumps!) with indexes, and foreign keys, for one table, comma separated list of tables,  by part of table name, for all tables by *
