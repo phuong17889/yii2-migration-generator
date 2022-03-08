@@ -1,5 +1,5 @@
 {
-	"name" : "navatech/yii2-migration-generator",
+	"name" : "phuong17889/yii2-migration-generator",
 	"description" : "gii tool for mass migration generation by Schema ",
 	"type" : "yii2-extension",
 	"keywords" : [
@@ -7,9 +7,9 @@
 		"extension"
 	],
 	"license" : "MIT",
-	"homepage" : "https://navatech.vn",
+	"homepage" : "https://lephuong.org",
 	"support" : {
-		"source" : "https://github.com/navatech/yii2-migration-generator"
+		"source" : "https://github.com/phuong17889/yii2-migration-generator"
 	},
 	"authors" : [
 		{
@@ -23,14 +23,14 @@
 	],
 	"autoload" : {
 		"psr-4" : {
-			"navatech\\migration\\" : "src/"
+			"phuong17889\\migration\\" : "src/"
 		}
 	},
 	"require" : {
-		"navatech/yii2-navatech-base" : "@dev",
+		"phuong17889/yii2-base" : "@dev",
 		"yiisoft/yii2-gii" : "*"
 	},
 	"extra" : {
-		"bootstrap" : "navatech\\migration\\Bootstrap"
+		"bootstrap" : "phuong17889\\migration\\Bootstrap"
 	}
 }
