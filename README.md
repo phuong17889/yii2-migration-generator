@@ -1,6 +1,5 @@
-DEPRECATED
 ==========
-This project no longer supported. Using [insolita/yii2-migration-generator](https://github.com/Insolita/yii2-migrik) is better:
+Using [insolita/yii2-migration-generator](https://github.com/Insolita/yii2-migrik) is better:
 ```
 https://github.com/Insolita/yii2-migrik
 ```
@@ -18,13 +17,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require-dev --prefer-dist navatech/yii2-migration-generator "*"
+php composer.phar require-dev --prefer-dist phuong17889/yii2-migration-generator "*"
 ```
 
 or add
 
 ```
-"navatech/yii2-migration-generator": "*"
+"phuong17889/yii2-migration-generator": "*"
 ```
 
 to the require-dev section of your `composer.json` file.
