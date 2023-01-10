@@ -17,13 +17,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require-dev --prefer-dist phuong17889/yii2-migration-generator "*"
+php composer.phar require-dev --prefer-dist phuongdev89/yii2-migration-generator "*"
 ```
 
 or add
 
 ```
-"phuong17889/yii2-migration-generator": "*"
+"phuongdev89/yii2-migration-generator": "*"
 ```
 
 to the require-dev section of your `composer.json` file.

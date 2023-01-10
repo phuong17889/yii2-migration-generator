@@ -1,14 +1,14 @@
 <?php
 /**
- * Created by phuong17889.
+ * Created by phuongdev89.
  * @project Gii
  * @author  Phuong
- * @email   phuong17889[at]gmail.com
+ * @email   phuongdev89@gmail.com
  * @date    18/02/2016
  * @time    4:58 CH
  */
 
-namespace phuong17889\migration\gii;
+namespace phuongdev89\migration\gii;
 
 use Yii;
 use yii\db\Connection;

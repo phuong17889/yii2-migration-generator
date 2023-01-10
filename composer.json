@@ -1,5 +1,5 @@
 {
-	"name" : "phuong17889/yii2-migration-generator",
+	"name" : "phuongdev89/yii2-migration-generator",
 	"description" : "gii tool for mass migration generation by Schema ",
 	"type" : "yii2-extension",
 	"keywords" : [
@@ -7,9 +7,8 @@
 		"extension"
 	],
 	"license" : "MIT",
-	"homepage" : "https://lephuong.org",
 	"support" : {
-		"source" : "https://github.com/phuong17889/yii2-migration-generator"
+		"source" : "https://github.com/phuongdev89/yii2-migration-generator"
 	},
 	"authors" : [
 		{
@@ -17,20 +16,20 @@
 			"email" : "donnainsolita@gmail.com"
 		},
 		{
-			"name" : "Le Phuong",
+			"name" : "Phuong Dev",
 			"email" : "phuong1789@gmail.com"
 		}
 	],
 	"autoload" : {
 		"psr-4" : {
-			"phuong17889\\migration\\" : "src/"
+			"phuongdev89\\migration\\" : "src/"
 		}
 	},
 	"require" : {
-		"phuong17889/yii2-base" : "@dev",
+		"phuongdev89/yii2-base" : "@dev",
 		"yiisoft/yii2-gii" : "*"
 	},
 	"extra" : {
-		"bootstrap" : "phuong17889\\migration\\Bootstrap"
+		"bootstrap" : "phuongdev89\\migration\\Bootstrap"
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace phuong17889\migration;
+namespace phuongdev89\migration;
 
 use yii\base\Application;
 use yii\base\BootstrapInterface;
@@ -19,7 +19,7 @@ class Bootstrap implements BootstrapInterface
         /**@var Module $gii */
         if ($app->hasModule('gii') && $gii = $app->getModule('gii')) {
             if (!isset($gii->generators['migration'])) {
-                $gii->generators['migration'] = 'phuong17889\migration\gii\Generator';
+                $gii->generators['migration'] = 'phuongdev89\migration\gii\Generator';
             }
         }
     }

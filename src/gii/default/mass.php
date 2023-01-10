@@ -3,7 +3,7 @@
  * This view is used by console/controllers/MigrateController.php
  * The following variables are available in this view:
  */
-use phuong17889\migration\gii\Generator;
+use phuongdev89\migration\gii\Generator;
 
 /** @var $migrationName string the new migration class name
  * @var array     $tableList
